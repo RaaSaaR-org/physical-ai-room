@@ -1,0 +1,27 @@
+{
+  "name": "physical-ai-room",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "playwright test",
+    "prepare:robot": "node scripts/prepare-robot.mjs",
+    "prepare:episode": "uv run --with pyarrow python scripts/prepare-episode.py",
+    "prepare:human": "node scripts/prepare-human.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "lucide": "^0.468.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}
