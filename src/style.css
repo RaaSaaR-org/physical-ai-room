@@ -93,15 +93,10 @@ p {
   align-items: center;
 }
 .brand-symbol {
-  font-size: 43px;
-  line-height: 1;
-  font-weight: 700;
-  color: var(--orange);
-  letter-spacing: -5px;
-  transform: translateY(-3px);
-}
-.brand-symbol > span {
-  color: #f0eae4;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: block;
 }
 .brand > b {
   font-size: 21px;
@@ -1792,7 +1787,8 @@ kbd {
     padding: 0 16px;
   }
   .brand-symbol {
-    font-size: 35px;
+    width: 32px;
+    height: 32px;
   }
   .brand > b {
     font-size: 18px;
